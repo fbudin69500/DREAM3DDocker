@@ -149,6 +149,7 @@ RUN wget --content-disposition https://sourceforge.net/projects/itk/files/itk/4.
     -DModule_SCIFIO=ON \
     -DBUILD_TESTING=OFF \
     -DBUILD_EXAMPLES=OFF \
+    -DITK_USE_SYSTEM_HDF5=ON \
     -DHDF5_DIR=/usr/src/DREAM3D_SDK/prefix-Release/share/cmake \
     -DCMAKE_INSTALL_PREFIX=/usr/src/DREAM3D_SDK/prefix-Release/ \
     -G Ninja \
