@@ -30,7 +30,7 @@ RUN mkdir DREAM3D-build-Release && \
   cd DREAM3D-build-Release && \
   cmake -C /usr/src/DREAM3D_SDK/DREAM3D_SDK.cmake \
     -G Ninja \
-    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_BUILD_TYPE=MinSizeRel \
     ../DREAM3D && \
   ninja
 
